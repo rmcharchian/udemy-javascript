@@ -1,3 +1,6 @@
+
+// Lecture on Variables
+/*
 var name = 'John';
 console.log(name);
 
@@ -9,3 +12,33 @@ console.log(age);
 
 var fullAge = true;
 console.log(fullAge);
+*/
+
+//Lecture: variables 2
+
+var name = 'John';
+var age = 26;
+
+console.log(name + age); //type coercion
+console.log(age + age); //adds the numbers
+
+var job, isMarried;
+
+console.log(job);
+
+job = 'teacher';
+isMarried = false;
+
+console.log(name + ' is ' + age + ' and is a ' + job + '.  Is he married? ' + isMarried);
+// type coercion converts all of this to a string in the console log
+
+age = 'thirty six';
+job = 'driver';
+
+console.log(name + ' is ' + age + ' and is a ' + job + '.  Is he married? ' + isMarried);
+// We changed their values on line 35 and 36.  Code is read in a sequence of instructions.
+
+var lastName = prompt('What is the last name?');
+console.log(lastName);
+
+alert(name + ' is ' + age + ' and is a ' + job + '.  Is he married? ' + isMarried);
