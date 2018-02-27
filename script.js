@@ -45,6 +45,7 @@ alert(name + ' is ' + age + ' and is a ' + job + '.  Is he married? ' + isMarrie
 */
 
 // Lecture: Operators
+/*
 var now = 2016;
 var birthYear = now - 26;
 
@@ -64,4 +65,35 @@ ageJohn = ageMark = (3 + 5) * 4 - 6;
 ageJohn++
 console.log(ageJohn);
 console.log(ageMark);
+*/
 //if questions, check procedence table
+
+//Lecture: if/else statements
+
+var name = 'John';
+var age = 26;
+var isMarried = 'yes';
+
+if (isMarried === 'yes') {
+    console.log(name +' is married!');
+} else {
+    console.log(name + ' will hopefully marry soon.');
+}
+
+isMarried = false;
+
+if(isMarried) {
+    console.log('Yes!');
+} else {
+    console.log('No!');
+}
+
+if (23 == "23") {
+    console.log('Something to print...');
+}
+//JS thinks these are the same thing because of type coercion
+
+if (23 === "23") {
+    console.log('Something to print...');
+}
+//JS does not use type coercion because of === because it is not true.  This is the more traditional use because it is safer.
