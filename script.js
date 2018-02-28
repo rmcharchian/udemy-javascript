@@ -100,7 +100,7 @@ if (23 === "23") {
 //JS does not use type coercion because of === because it is not true.  This is the more traditional use because it is safer.
 
 //Lecture:  Boolean logic and switch
-
+/*
 var age = 20
 
 if (age < 20) {
@@ -128,3 +128,43 @@ switch (job) {
     default:
         console.log('John does something else.');    
 }
+*/
+
+//Coding Challege 1
+
+var billHeight = 200;
+var billAge = 26;
+
+var danHeight = 130;
+var danAge = 20;
+
+var samHeight = 300;
+var samAge = 30;
+
+billScore = (billHeight + billAge);
+    console.log(billScore);
+
+danScore = (danHeight + danAge);
+    console.log(danScore);
+
+samScore = (samHeight + samAge);
+    console.log(samScore);
+
+    /*
+  if (billScore > danScore) {
+      console.log('Bill wins with a score of ' + billScore);
+  } else if (danScore > billScore) { 
+      console.log('Dan wins with a score of ' + danScore);
+  } else {
+      console.log('There is a draw.');
+  }
+  */
+
+  var maryHeight = 158;
+  var maryAge = 31;
+  var maryScore = (maryHeight + maryAge);
+    console.log(maryScore);
+
+ if (billScore > danScore && maryScore) {
+    console.log('Bill wins with a score of ' + billScore + ' points!');
+ }   
