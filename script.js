@@ -201,7 +201,7 @@ samScore = (samHeight + samAge);
  //Lecture: Statements and Expressions
 
  //Lecture:Arrays
-
+/*
  var namesArray = ['john', 'Jane', 'Mark'];
  var yearsArray = new Array(1990, 1969, 1948);
 
@@ -223,7 +223,40 @@ samScore = (samHeight + samAge);
  if (john.indexOf('teacher') === -1) {
      console.log('John is not a teacher.');
  }
+ */
 
- 
+ //Lecture: Objects and Properties
+
+ var john = {
+     name: 'John',
+     lastName: 'Smith',
+     yearOfBirth: 1990,
+     job: 'teacher',
+     isMarried: false
+ }
+ //this is an object literal
+
+ console.log(john);
+ console.log(john.lastName);
+ console.log(john['lastName']);
+
+ var xyz = 'job';
+ console.log(john[xyz]);
+
+ john.lastName = 'Miller';
+ john['job'] = 'programmer';
+ console.log(john);
+ //data mutated
+
+ //or you can write it this way
+
+ var jane = new Object();
+ jane.name = 'Jane';
+ jane.lastName = 'Smith';
+ jane['yearOfBirth'] = 1969;
+
+ console.log(jane);
+
+
  
 
