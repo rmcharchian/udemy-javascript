@@ -198,6 +198,32 @@ samScore = (samHeight + samAge);
  yearsUntilRetirement('Mary', 1948);
  */
 
- //:ecture: Statements and Expressions
+ //Lecture: Statements and Expressions
+
+ //Lecture:Arrays
+
+ var namesArray = ['john', 'Jane', 'Mark'];
+ var yearsArray = new Array(1990, 1969, 1948);
+
+ console.log(namesArray); //pulls up all of the names
+ console.log(namesArray[0]);  //pulls up just John
+
+ namesArray[1] = 'Ben'; //mutates array
+ console.log(namesArray);
+
+ var john = ['John', 'Smith', 1990, 'designer', false];
+
+ john.push('blue');  //push adds to the end of an array
+ john.unshift('Mr.'); //unshift adds to the beginning of the array
+ john.pop(); //pop removes the last element from the array
+ john.shift(); //removes the first element from the array
+ console.log(john);
 
  
+ if (john.indexOf('teacher') === -1) {
+     console.log('John is not a teacher.');
+ }
+
+ 
+ 
+
