@@ -171,7 +171,7 @@ samScore = (samHeight + samAge);
  */
 
  //Lecture: Functions
-
+/*
  function calculateAge(yearOfBirth) {
      var age = 2016 - yearOfBirth;
      return age;
@@ -196,3 +196,8 @@ samScore = (samHeight + samAge);
  yearsUntilRetirement('John', 1990);
  yearsUntilRetirement('Mike', 1969);
  yearsUntilRetirement('Mary', 1948);
+ */
+
+ //:ecture: Statements and Expressions
+
+ 
