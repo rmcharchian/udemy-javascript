@@ -226,7 +226,7 @@ samScore = (samHeight + samAge);
  */
 
  //Lecture: Objects and Properties
-
+/*
  var john = {
      name: 'John',
      lastName: 'Smith',
@@ -256,7 +256,50 @@ samScore = (samHeight + samAge);
  jane['yearOfBirth'] = 1969;
 
  console.log(jane);
+*/
 
+//Lecture: Objects and Methods
+/*
+//v1.0
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        return 2016-this.yearOfBirth;
+    }
+};
 
+console.log(john);  //all of John's info
+console.log(john.family); //family
+console.log(john.family[2]); //Bob
+console.log(john.calculateAge(1990));  //John's age
+console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(john);
+*/
+
+//v2.0
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        //return 2016-this.yearOfBirth;
+        this.age = 2016 - this.yearOfBirth;
+    }
+};
+
+john.calculateAge();
+console.log(john);
  
 
