@@ -306,9 +306,9 @@ console.log(john);
 
 //Lecture: Loops and Iteration
 
-for (var i = 0; i < 10; i++) {
-    console.log(i);
-}
+//for (var i = 0; i < 10; i++) {
+    //console.log(i);
+//}
 
  /* 
 0, true, print 0, update i to 1
@@ -342,7 +342,7 @@ for (var i = 0; i < 10; i++) {
 // when we want to start with a specific item [4] and we want to begin at the end
 
 //While loops
-var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+/*var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
 var i = 0; //if we want a counter
 
 while (i < names.length) {
@@ -367,3 +367,31 @@ for (var i=0; i<=5; i++) {
 
     console.log(i);
 }
+*/
+
+//Code Challenge 2
+
+function printFullAge(years) {
+    var ages = [];
+    var fullAges = [];
+
+
+for (var i =0; i < birthYear.length; i++) {
+    ages[i] = 2018 - birthYear[i];
+}
+
+for (i = 0; i < ages.length; i++) {
+    if (ages[i] >= 18) {
+        console.log('Person ' + (i +1) + ' is ' + ages[i] + ' years old and is of full age.');
+        fullAges.push(true);
+    } else {
+        console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old and is not of full age.');
+        fullAges.push(false);
+    }
+}
+    return fullAges;
+}
+
+var birthYear = [1969, 1928, 2010];
+var full_1 = printFullAges(birthYear);
+var full_2 = printFullAge([2012, 1915, 1999]);
