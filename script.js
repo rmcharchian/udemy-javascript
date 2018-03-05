@@ -370,7 +370,7 @@ for (var i=0; i<=5; i++) {
 */
 
 //Code Challenge 2
-
+/*
 function printFullAge(years) {
     var ages = [];
     var fullAges = [];
@@ -395,3 +395,37 @@ for (i = 0; i < ages.length; i++) {
 var birthYear = [1969, 1928, 2010];
 var full_1 = printFullAges(birthYear);
 var full_2 = printFullAge([2012, 1915, 1999]);
+*/
+
+// Lecture: Hoisting
+
+//This works with function declarations.  the call can be either before or after the function because of hoisting/global execution.  
+calculateAge(1965);
+
+function calculateAge(year) {
+    console.log(2016 - year);
+}
+
+
+//This works with function expression
+
+//retirement(1990);  This doesn't work for an expression.  Has to be after the expression rather than before or after.
+
+var retirement = function(year) {
+    console.log(65 - (2016- year));
+}
+
+retirement(1990);
+
+//variables
+//console.log(age);  if we use this before we define it, it will show up in the console log as undefined
+var age = 23;
+console.log(age);
+
+function foo() {
+    var age = 65;
+    console.log(age);
+}
+foo();
+console.log(age); //console logs 23 because it is globally executing
+
