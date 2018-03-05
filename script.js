@@ -400,17 +400,16 @@ var full_2 = printFullAge([2012, 1915, 1999]);
 // Lecture: Hoisting
 
 //This works with function declarations.  the call can be either before or after the function because of hoisting/global execution.  
-calculateAge(1965);
+/*calculateAge(1965);
 
 function calculateAge(year) {
     console.log(2016 - year);
 }
-
-
+*/
 //This works with function expression
 
 //retirement(1990);  This doesn't work for an expression.  Has to be after the expression rather than before or after.
-
+/*
 var retirement = function(year) {
     console.log(65 - (2016- year));
 }
@@ -428,4 +427,28 @@ function foo() {
 }
 foo();
 console.log(age); //console logs 23 because it is globally executing
+*/
 
+//Lecture: Scoping and the Scope Chain
+/*
+var a = 'Hello';
+first();
+
+function first() {
+    var b = 'Hi';
+    second();
+
+        function second() {
+        var c = 'Hey'; 
+        third()  
+        //console.log(a + b + c);
+        }
+}
+
+function third() {
+    var d = 'John';
+    console.log(a + d);
+}
+*/
+
+//Lecture: 
